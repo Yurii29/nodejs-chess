@@ -54,8 +54,8 @@ phases:
     #file-format: JunitXml | CucumberJson
 artifacts:
   files:
-      - ./lib/client/*
-      - ./node_modules/*
+      - ./lib/client/
+      - ./node_modules/
   #name: $(date +%Y-%m-%d)
   #discard-paths: yes
   #base-directory: location
