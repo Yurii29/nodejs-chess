@@ -31,6 +31,7 @@ phases:
       # - command
   pre_build:
     commands:
+       - yum install unzip -y
        - node -v
        - npm -v
        - ls
@@ -43,7 +44,7 @@ phases:
       # - command
  # post_build:
   #  commands:
-  #     - pwd 
+   #    - zip ${pwd} 
 #reports:
   #report-name-or-arn:
     #files:
@@ -55,7 +56,7 @@ phases:
 artifacts:
   files:
       - ./lib/client/**/*
-      #- ./**/*
+      - ./**/*
   #name: $(date +%Y-%m-%d)
   #discard-paths: yes
   #base-directory: location
